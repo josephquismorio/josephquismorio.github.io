@@ -1,0 +1,33 @@
+body {
+    background: teal;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    padding: 1rem 1rem;
+}
+
+a {
+    color: white;
+}
+
+#hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about {
+    display: inline-block;
+}
+
+table {
+    border-collapse: collapse;
+    width: 45%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
