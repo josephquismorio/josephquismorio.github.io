@@ -4,77 +4,93 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Joseph Quismorio</title>
   </head>
   <body>
     <div id="hero">
-      <h1>Hello!</h1>
-      <p>This is a website for CSCE 432.</p>
+      <div id="hero-text">
+        <h1>Hello!</h1>
+        <p>This is a website for CSCE 432. The image on the right is of a cat walking up the side of a staircase, with the Eiffel Tower in the background, and serves as a cosmetic image.</p>
+      </div>
       <img
         src="cat_walking.jpg"
         alt="This is an image of a cat walking up the side of a staircase with the Eiffel Tower in the background"
-        style="width: 300px"
       />
     </div>
     <div id="about">
-      <h2>About Me</h2>
-      <p>
-        Howdy! My name is Joseph Quismorio, and I am a 21 year old senior year
-        computer science student at
-        <a href="https://tamu.edu">Texas A&M University</a>
-      </p>
-      <img
-        src="tamu.png"
-        alt="This is an image of the logo of Texas A&M University."
-        style="width: 300px"
-      />
+      <div id="about-images">
+        <img
+          id="joey"
+          src="joey.png"
+          alt="This is an image of the author, Joseph Quismorio."
+        />
+      </div>
+      <div id="about-text">
+        <h2>About Me</h2>
+        <p>
+          Howdy! My name is <strong>Joseph Quismorio</strong>, and I am a 21 year old senior year
+          computer science student at
+          <a href="https://tamu.edu">Texas A&M University</a>.
+          I focus primarily on front-end development and design.
+          <br/><br/>
+          Some things I like include: 
+          <ul>
+            <li>Music (hip-hop, indie, jazz)</li>
+            <li>Watching TV (<em>The Wire</em>, <em>The Sopranos</em>, <em>Succession</em>)</li>
+            <li>Watching movies</li>
+            <li>Writing</li>
+          </ul>
+          <p>
+            My interests in accessibility include front-end design for web accessibility, such as in making websites usable for individuals with disabilities and bringing more awareness to the necessity of accessibility measures to provide benefits to and ensure a pleasant user experience for all people.
+          </p>
+        </p>
+      </div>
     </div>
-    <div id="things-i-like">
-      <h2>Things I like</h2>
-      <ul>
-        <li>Hip Hop</li>
-        <li>Football</li>
-        <li>Movies</li>
-        <li>Writing</li>
-      </ul>
-      <p>Now ranked:</p>
-      <ol>
-        <li>Hip Hop</li>
-        <li>Movies</li>
-        <li>Football</li>
-        <li>Writing</li>
-      </ol>
-    </div>
-    <div id="music-ratings">
-      <h2>Music Ratings</h2>
-      <p>These are some ratings of albums I have listed to in the past.</p>
-      <table>
-        <tr>
-          <th>Album</th>
-          <th>Rating</th>
-        </tr>
-        <tr>
-          <td>Madvillain - Madvillainy</td>
-          <td>10/10</td>
-        </tr>
-        <tr>
-          <td>Bjork - Vespertine</td>
-          <td>10/10</td>
-        </tr>
-        <tr>
-          <td>JAY-Z - 4:44</td>
-          <td>8/10</td>
-        </tr>
-        <tr>
-          <td>Tame Impala - Currents</td>
-          <td>7/10</td>
-        </tr>
-        <tr>
-          <td>Death Grips - The Money Store</td>
-          <td>9/10</td>
-        </tr>
-      </table>
+    <div id="bottom-container">
+      <div id="music-ratings">
+        <h2>Music Ratings</h2>
+        <p>These are some ratings of albums I have listed to in the past.</p>
+        <table>
+          <tr>
+            <th>Album</th>
+            <th>Rating</th>
+          </tr>
+          <tr>
+            <td>Madvillain - Madvillainy</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>Bjork - Vespertine</td>
+            <td>10/10</td>
+          </tr>
+          <tr>
+            <td>JAY-Z - 4:44</td>
+            <td>8/10</td>
+          </tr>
+          <tr>
+            <td>Tame Impala - Currents</td>
+            <td>7/10</td>
+          </tr>
+          <tr>
+            <td>Death Grips - The Money Store</td>
+            <td>9/10</td>
+          </tr>
+        </table>  
+      </div>
+      <div id="email-form">
+        <form action="mailto:josephquismorio@gmail.com" method="GET">
+          <h3>Name:</h3>
+          <input type="text" name="first_name"/>
+          <h3>E-mail:</h3>
+          <input type="text" name="email"/>
+          <h3>Subject:</h3>
+          <input type="text" name="subject"/>
+          <h3>Message:</h3>
+          <textarea name="body"></textarea>
+          <button type="submit">Submit Form</button>
+        </form>
+      </div>
     </div>
   </body>
 </html>

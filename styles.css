@@ -1,33 +1,179 @@
+@import url("https://fonts.cdnfonts.com/css/atkinson-hyperlegible");
+
+/* Globals */
+
 body {
-    background: teal;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: large;
-    padding: 1rem 1rem;
+  background: white;
+  color: black;
+  font-family: "Atkinson Hyperlegible";
+  padding: 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
 }
+
+h1 {
+    font-size: 48px;
+}
+
+h2 {
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 20px;
+}
+
 
 a {
-    color: white;
+  color: blue;
+  cursor: pointer;
 }
 
-#hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-#about {
-    display: inline-block;
+a:hover {
+  color: red;
+  transition: 500ms;
 }
 
 table {
-    border-collapse: collapse;
-    width: 45%;
+  border-collapse: collapse;
+  width: 100%;
 }
 
-td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  font-size: 20px;
+}
+
+ul {
+    font-size: 20px;
+}
+
+/* Specific classes */
+
+#hero {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 80%;
+  gap: 30px;
+}
+
+#hero-text {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  width: 50%;
+}
+
+#hero img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+#about {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 30px;
+  width: 80%;
+}
+
+#about-text {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+#about-images {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#joey {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  filter: drop-shadow(0 0 0.5rem black);
+}
+
+#tamu {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+}
+
+#bottom-container {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+#email-form {
+    width: 50%;
+}
+
+#email-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+#email-form button {
+    margin-top: 30px;
+}
+
+#email-form textarea {
+    resize: none;
+    height: 300px;
+}
+/* Media stuff */
+
+@media screen and (max-width: 1000px) {
+  #hero {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #hero-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  #about {
+    flex-direction: column-reverse;
+    width: 100%;
+  }
+
+  #about-text {
+    width: 100%;
+  }
+
+  #about-images {
+    width: 100%;
+  }
+
+  #bottom-container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #email-form {
+    width: 100%;
+}
 }
