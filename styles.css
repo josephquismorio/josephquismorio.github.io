@@ -14,21 +14,20 @@ body {
 }
 
 h1 {
-    font-size: 48px;
+  font-size: 48px;
 }
 
 h2 {
-    font-size: 32px;
+  font-size: 32px;
 }
 
 h3 {
-    font-size: 24px;
+  font-size: 24px;
 }
 
 p {
-    font-size: 20px;
+  font-size: 20px;
 }
-
 
 a {
   color: blue;
@@ -53,8 +52,9 @@ th {
   font-size: 20px;
 }
 
+ol,
 ul {
-    font-size: 20px;
+  font-size: 20px;
 }
 
 /* Specific classes */
@@ -117,7 +117,7 @@ ul {
   object-fit: cover;
 }
 
-#bottom-container {
+#otherinfo {
   display: flex;
   flex-direction: row;
   gap: 15px;
@@ -125,22 +125,42 @@ ul {
   justify-content: space-between;
 }
 
+#music-ratings {
+  width: 50%;
+}
+
+#movie-rankings {
+  width: 50%;
+}
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  width: 80%;
+  justify-content: space-between;
+}
+
+#contact-text {
+  width: 50%;
+}
+
 #email-form {
-    width: 50%;
+  width: 50%;
 }
 
 #email-form form {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 #email-form button {
-    margin-top: 30px;
+  margin-top: 30px;
 }
 
 #email-form textarea {
-    resize: none;
-    height: 300px;
+  resize: none;
+  height: 300px;
 }
 /* Media stuff */
 
@@ -168,12 +188,29 @@ ul {
     width: 100%;
   }
 
-  #bottom-container {
+  #otherinfo {
     flex-direction: column;
+    width: 100%;
+  }
+
+  #music-ratings {
+    width: 100%;
+  }
+
+  #movie-rankings {
+    width: 100%;
+  }
+
+  #contact {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #contact-text {
     width: 100%;
   }
 
   #email-form {
     width: 100%;
-}
+  }
 }
